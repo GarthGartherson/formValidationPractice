@@ -1,0 +1,126 @@
+html,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("https://images.unsplash.com/photo-1594058573823-d8edf1ad3380?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=462&q=80");
+  background-size: cover;
+  inset: 0;
+}
+
+.form-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  min-width: 250px;
+  /* max-width: 400px; */
+  padding: 20px;
+  background-color: #faf9f6;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 40%; */
+  margin: auto;
+  border-radius: 3%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.data-container {
+  width: 100%;
+  padding: 10px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container_information {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.container_information input {
+  flex-shrink: 0;
+  min-height: 20px;
+  width: 60%;
+  border-radius: 31px;
+  text-indent: 10px;
+}
+.container_information label {
+  width: 40%;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+.form_title {
+  font-size: 1.5rem;
+}
+
+/* error */
+
+input:invalid {
+  color: red;
+  border-color: #900;
+  background-color: #dddddd;
+}
+
+input:focus:invalid {
+  outline: none;
+  background-color: white;
+}
+
+/* This is the style of our error messages */
+.error {
+  height: 10px;
+  width: 100%;
+  font-size: 80%;
+  color: red;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.input-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input {
+  width: 90%;
+  margin-bottom: 0.1rem;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 20vw;
+  text-align: center;
+}
+
+.submit-container button {
+  max-width: 10rem;
+  margin: auto;
+  margin-bottom: 0.25rem;
+}

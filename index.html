@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <title>Form Validation Practice!</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="#" novalidate>
+        <div class="form_title">Form</div>
+        <div class="data-container">
+          <div class="container_information">
+            <label for="email">Email</label>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                minlength="5"
+                maxlength="40"
+                required
+              />
+              <span class="error emailError" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="container_information">
+            <label for="country">Country</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="country"
+                minlength="4"
+                maxlength="28"
+                required
+              />
+              <span class="error countryError" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="container_information">
+            <label for="zipcode">Zip Code</label>
+            <div class="input-wrapper">
+              <input
+                type="number"
+                id="zipcode"
+                min="0"
+                max="100000000"
+                required
+              />
+              <span class="error zipcodeError" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="container_information">
+            <label for="password">Password</label>
+            <div class="input-wrapper">
+              <input
+                type="password"
+                id="password"
+                minlength="5"
+                maxlength="20"
+                required
+              />
+              <span class="error passwordError" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="container_information">
+            <label for="confirmPassword">Confirm Password</label>
+            <div class="input-wrapper">
+              <input
+                type="password"
+                id="confirmPassword"
+                minlength="5"
+                maxlength="80"
+                required
+              />
+              <span
+                class="error confirmPasswordError"
+                aria-live="polite"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="submit-container">
+          <button class="submitButton" type="submit">Submit Form</button>
+          <span class="error submitError" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
